@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi E-commerce</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi E-commerce</h1>
+    </header>
+    
+    <main>
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Usuario" />
+            <input type="password" id="password" placeholder="Contraseña" />
+            <button id="login-btn">Login</button>
+        </div>
+
+        <div id="menu" style="display:none;">
+            <h2>Gestión de Productos y Categorías</h2>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Buscar productos..." />
+                <button id="search-btn">Buscar</button>
+            </div>
+            <div id="category-list" class="category-list"></div>
+            <div id="product-management" style="display:none;">
+                <h3>Gestión de Productos</h3>
+                <h4 id="selected-category-name"></h4>
+                <input type="text" id="product-name" placeholder="Nombre del producto" />
+                <input type="text" id="product-description" placeholder="Descripción del producto" />
+                <input type="number" id="product-price" placeholder="Precio" />
+                <input type="number" id="product-stock" placeholder="Stock" />
+                <input type="text" id="product-image" placeholder="URL de la imagen" />
+                <button id="add-product-btn">Añadir Producto</button>
+                <button id="edit-product-btn">Editar Producto</button>
+                <button id="delete-product-btn">Eliminar Producto</button>
+                <button id="view-products-btn">Ver Productos</button>
+                <div id="product-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
